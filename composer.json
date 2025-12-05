@@ -87,6 +87,12 @@
         "test": [
             "@php artisan config:clear --ansi",
             "@php artisan test"
+        ],
+        "pre-deploy": [
+            "@php fix-deployment.php"
+        ],
+        "post-install-cmd": [
+            "@php fix-deployment.php || true"
         ]
     },
     "extra": {
