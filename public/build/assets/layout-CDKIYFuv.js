@@ -1,1 +1,0 @@
-import{j as e}from"./app-BAYl1HSz.js";/* empty css            */function r({children:s}){return e.jsx("div",{children:e.jsx("div",{className:"flex flex-col lg:flex-row lg:space-y-0 lg:space-x-6",children:s})})}export{r as default};
