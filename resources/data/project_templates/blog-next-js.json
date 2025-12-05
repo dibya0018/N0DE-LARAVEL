@@ -1,0 +1,2995 @@
+{
+	"slug": "blog-next-js",
+	"name": "Blog NextJS",
+	"description": "Template exported from project #2",
+	"has_demo_data": true,
+	"default_locale": "en",
+	"locales": ["en"],
+	"public_api": false,
+	"collections": [
+		{
+			"name": "About",
+			"slug": "about",
+			"is_singleton": true,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Name",
+					"name": "name",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Short Bio",
+					"name": "short-bio",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "richtext",
+					"label": "About Section",
+					"name": "about-section",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "media",
+					"label": "Image",
+					"name": "image",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "X",
+					"name": "x",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Facebook",
+					"name": "facebook",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Github",
+					"name": "github",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "LinkedIn",
+					"name": "linkedin",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "email",
+					"label": "Email",
+					"name": "email",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"slug": "posts",
+			"is_singleton": false,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Title",
+					"name": "title",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "slug",
+					"label": "URL",
+					"name": "url",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": "title",
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": true,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "longtext",
+					"label": "Excerpt",
+					"name": "excerpt",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "richtext",
+					"label": "Content",
+					"name": "content",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "media",
+					"label": "Cover Image",
+					"name": "cover-image",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "relation",
+					"label": "Author",
+					"name": "author",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": "authors"
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "relation",
+					"label": "Categories",
+					"name": "categories",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 2,
+							"collection": "categories"
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "relation",
+					"label": "Tags",
+					"name": "tags",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 2,
+							"collection": "tags"
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "boolean",
+					"label": "Featured",
+					"name": "featured",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"slug": "comments",
+			"is_singleton": false,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Name",
+					"name": "name",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "email",
+					"label": "Email",
+					"name": "email",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "longtext",
+					"label": "Comment",
+					"name": "comment",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "relation",
+					"label": "Post",
+					"name": "post",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": "posts"
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Pages",
+			"slug": "pages",
+			"is_singleton": false,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Page Title",
+					"name": "page-title",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "slug",
+					"label": "URL",
+					"name": "url",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": "page-title",
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "richtext",
+					"label": "Content",
+					"name": "content",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Authors",
+			"slug": "authors",
+			"is_singleton": false,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Name",
+					"name": "name",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "longtext",
+					"label": "About",
+					"name": "about",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "slug",
+					"label": "Avatar Seed",
+					"name": "avatar-seed",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": "name",
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"slug": "categories",
+			"is_singleton": false,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Title",
+					"name": "title",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "slug",
+					"label": "Slug",
+					"name": "slug",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": "title",
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": true,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Tags",
+			"slug": "tags",
+			"is_singleton": false,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Title",
+					"name": "title",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "slug",
+					"label": "Slug",
+					"name": "slug",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": "title",
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": true,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Blog Features",
+			"slug": "blog-features",
+			"is_singleton": false,
+			"fields": [
+				{
+					"type": "slug",
+					"label": "Icon Name",
+					"name": "icon-name",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Title",
+					"name": "title",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Sub Text",
+					"name": "sub-text",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "number",
+					"label": "Order",
+					"name": "order",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Hero Section",
+			"slug": "hero-section",
+			"is_singleton": true,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Title",
+					"name": "title",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Sub Text",
+					"name": "sub-text",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "boolean",
+					"label": "Show Read Articles Button",
+					"name": "read-articles",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "boolean",
+					"label": "Show Browse Button",
+					"name": "browse-button",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Newsletter",
+			"slug": "newsletter",
+			"is_singleton": false,
+			"fields": [
+				{
+					"type": "email",
+					"label": "Email",
+					"name": "email",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": true,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Settings",
+			"slug": "settings",
+			"is_singleton": true,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Site Title",
+					"name": "title",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Site Description",
+					"name": "description",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "media",
+					"label": "Fav Icon",
+					"name": "fav-icon",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "X",
+					"name": "x",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Facebook",
+					"name": "facebook",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Github",
+					"name": "github",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "LinkedIn",
+					"name": "linkedin",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Google Analytics",
+					"name": "google-analytics",
+					"description": null,
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		}
+	],
+	"demo_data": [
+		{
+			"collection": "about",
+			"entries": [
+				{
+					"id": "e1",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"name": "Jane Smith",
+						"short-bio": "Developer, writer, and educator crafting modern web experiences",
+						"about-section": "<h2 class=\"text-2xl font-semibold mb-4\">About Me</h2>\n<div class=\"prose dark:prose-invert\">\n<p>I started Modern Blog in April 2023 as a way to document my journey learning new web technologies. After years of working as a frontend developer at various tech companies, I wanted to share my knowledge and experiences with the broader development community.</p>\n<p>My background includes 5 years of experience with React, TypeScript, and various modern frontend frameworks. I'm particularly passionate about clean code, intuitive UI/UX, and helping beginners overcome the hurdles I once faced.</p>\n<p>When I'm not coding or writing, you'll find me hiking with my dog Charlie, experimenting with new cooking recipes, or volunteering at local tech meetups teaching programming to kids.</p>\n</div>",
+						"x": "https://x.com",
+						"facebook": "https://facebook.com",
+						"github": "https://github.com",
+						"linkedin": "https://linkedin.com",
+						"email": "email@email.com",
+						"image": null
+					}
+				}
+			]
+		},
+		{
+			"collection": "posts",
+			"entries": [
+				{
+					"id": "e2",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Introducing ElmapiCMS v3: A Complete Rebuild with Laravel 12 & React",
+						"url": "introducing-elmapicms-v3t",
+						"excerpt": "Discover what's new in ElmapiCMS v3 – rebuilt on Laravel 12, React & Inertia.js with a brand-new UI, advanced permissions, faster API and more.",
+						"author": [
+							"e5"
+						],
+						"categories": [
+							"e7"
+						],
+						"tags": [
+							"e40",
+							"e41",
+							"e14",
+							"e16"
+						],
+						"featured": true,
+						"cover-image": null,
+						"content": "<h2 class=\"text-2xl font-semibold mb-4\">ElmapiCMS v3 is here!</h2>\n<p>The third major version of ElmapiCMS is a ground-up rewrite focused on speed, developer-experience and end-user productivity. Here's what's new:</p>\n<ul class=\"list-disc pl-6 mt-3 space-y-2\">\n<li><strong>Rebuilt with Laravel 12, React, TypeScript, Shadcn UI &amp; Inertia.js</strong> for a modern, lightning-fast stack.</li>\n<li><strong>Brand new UI</strong> that is cleaner, more intuitive and <em>fully responsive</em> with built-in <em>dark mode</em>.</li>\n<li><strong>Advanced users, roles &amp; permissions management</strong> lets you model any team workflow.</li>\n<li><strong>All-new asset library</strong> with powerful uploader, filtering by type/date, grid &amp; list views, image crop and richer metadata.</li>\n<li><strong>New Data Table</strong> component offering advanced filtering, sorting and bulk operations across the app.</li>\n<li><strong>Project &amp; collection templates</strong> – spin up new projects or collections in seconds and save your own as reusable templates. Even <em>clone</em> an entire project with a click.</li>\n<li><strong>Single entry collection type</strong> ideal for site-wide settings, hero content and more.</li>\n<li><strong>Duplicate entries</strong> to speed up content creation.</li>\n<li><strong>Lexical editor</strong> upgraded with source code view, fullscreen mode and direct image insertion from URL or the asset library.</li>\n<li><strong>Faster content API</strong> with richer filtering so your front-end stays blazing fast.</li>\n<li><strong>New Documentation!</strong></li>\n</ul>\n<p>We can’t wait to see what you build with ElmapiCMS v3.</p>"
+					}
+				}
+			]
+		},
+		{
+			"collection": "pages",
+			"entries": [
+				{
+					"id": "e3",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"page-title": "Privacy Policy",
+						"url": "privacy-policy",
+						"content": "<section class=\"mb-8\">\n<h2 class=\"text-2xl font-semibold mb-4\">1. Introduction 1</h2>\n<p>Welcome to Modern Blog. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights and how the law protects you.</p>\n</section>\n<section class=\"mb-8\">\n<h2 class=\"text-2xl font-semibold mb-4\">2. The Data We Collect</h2>\n<p>We may collect, use, store and transfer different kinds of personal data about you which we have grouped together as follows:</p>\n<ul class=\"list-disc pl-6 mt-3 space-y-2\">\n<li>Identity Data includes first name, last name, username or similar identifier.</li>\n<li>Contact Data includes email address and telephone numbers.</li>\n<li>Technical Data includes internet protocol (IP) address, browser type and version, time zone setting and location, operating system and platform.</li>\n<li>Usage Data includes information about how you use our website and services.</li>\n</ul>\n</section>\n<section class=\"mb-8\">\n<h2 class=\"text-2xl font-semibold mb-4\">3. How We Use Your Data</h2>\n<p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:</p>\n<ul class=\"list-disc pl-6 mt-3 space-y-2\">\n<li>To provide you with the service you have requested.</li>\n<li>To improve our website and services.</li>\n<li>To personalize your experience.</li>\n<li>To communicate with you about updates or changes to our services.</li>\n</ul>\n</section>\n<section class=\"mb-8\">\n<h2 class=\"text-2xl font-semibold mb-4\">4. Cookies</h2>\n<p>We use cookies to distinguish you from other users of our website. This helps us to provide you with a good experience when you browse our website and also allows us to improve our site.</p>\n</section>\n<section class=\"mb-8\">\n<h2 class=\"text-2xl font-semibold mb-4\">5. Contact Us</h2>\n<p>If you have any questions about this privacy policy or our privacy practices, please contact us at:<br><a class=\"text-primary hover:underline\" href=\"mailto:privacy@modernblog.com\">privacy@modernblog.com</a></p>\n</section>"
+					}
+				},
+				{
+					"id": "e4",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"page-title": "Terms of Service",
+						"url": "terms-of-service",
+						"content": "<section class=\"mb-8\">\n<h2 class=\"text-2xl font-semibold mb-4\">1. Introduction</h2>\n<p>Welcome to Modern Blog. These terms and conditions outline the rules and regulations for the use of our website. By accessing this website, we assume you accept these terms and conditions in full. Do not continue to use Modern Blog if you do not accept all of the terms and conditions stated on this page.</p>\n</section>\n<section class=\"mb-8\">\n<h2 class=\"text-2xl font-semibold mb-4\">2. License to Use</h2>\n<p>Unless otherwise stated, Modern Blog and/or its licensors own the intellectual property rights for all material on Modern Blog. All intellectual property rights are reserved. You may view and/or print pages from the website for your own personal use subject to restrictions set in these terms and conditions.</p>\n<p class=\"mt-3\">You must not:</p>\n<ul class=\"list-disc pl-6 mt-3 space-y-2\">\n<li>Republish material from this website</li>\n<li>Sell, rent or sub-license material from this website</li>\n<li>Reproduce, duplicate or copy material from this website</li>\n<li>Redistribute content from Modern Blog (unless content is specifically made for redistribution)</li>\n</ul>\n</section>\n<section class=\"mb-8\">\n<h2 class=\"text-2xl font-semibold mb-4\">3. User Content</h2>\n<p>Certain parts of this website offer the opportunity for users to post comments or provide feedback. Modern Blog does not screen, edit, publish or review comments prior to their appearance on the website, and comments do not reflect the views or opinions of Modern Blog, its agents or affiliates.</p>\n<p class=\"mt-3\">By posting content on our website, you warrant and represent that:</p>\n<ul class=\"list-disc pl-6 mt-3 space-y-2\">\n<li>You are entitled to post the content on our website and have all necessary licenses and consents to do so.</li>\n<li>The content does not infringe any intellectual property right, including without limitation copyright, patent or trademark.</li>\n<li>The content does not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material.</li>\n<li>The content will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.</li>\n</ul>\n</section>\n<section class=\"mb-8\">\n<h2 class=\"text-2xl font-semibold mb-4\">4. Limitation of Liability</h2>\n<p>The information on this website is provided free-of-charge, and you acknowledge that it would be unreasonable to hold us liable for inaccuracies or errors in such information. We expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</p>\n</section>\n<section class=\"mb-8\">\n<h2 class=\"text-2xl font-semibold mb-4\">5. Contact Us</h2>\n<p>If you have any questions about these Terms of Service, please contact us at:<br><a class=\"text-primary hover:underline\" href=\"mailto:terms@modernblog.com\">terms@modernblog.com</a></p>\n</section>"
+					}
+				}
+			]
+		},
+		{
+			"collection": "authors",
+			"entries": [
+				{
+					"id": "e5",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"name": "ElmapiCMS",
+						"about": "ElmapiCMS is a modern CMS built with Laravel 12, React, TypeScript, Shadcn UI & Inertia.js",
+						"avatar-seed": "elmapicms"
+					}
+				},
+				{
+					"id": "e6",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"name": "John Doe",
+						"about": "John is a UI/UX designer with a passion for creating beautiful and functional user interfaces.",
+						"avatar-seed": "john-doe"
+					}
+				}
+			]
+		},
+		{
+			"collection": "categories",
+			"entries": [
+				{
+					"id": "e7",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Web Development",
+						"slug": "web-development"
+					}
+				},
+				{
+					"id": "e8",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Mobile Development",
+						"slug": "mobile-development"
+					}
+				},
+				{
+					"id": "e9",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "UI/UX Design",
+						"slug": "uiux-design"
+					}
+				},
+				{
+					"id": "e10",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "DevOps",
+						"slug": "devops"
+					}
+				},
+				{
+					"id": "e11",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Artificial Intelligence",
+						"slug": "artificial-intelligence"
+					}
+				},
+				{
+					"id": "e12",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Blockchain",
+						"slug": "blockchain"
+					}
+				},
+				{
+					"id": "e13",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Life",
+						"slug": "life"
+					}
+				}
+			]
+		},
+		{
+			"collection": "tags",
+			"entries": [
+				{
+					"id": "e14",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "React",
+						"slug": "react"
+					}
+				},
+				{
+					"id": "e15",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Next.Js",
+						"slug": "nextjs"
+					}
+				},
+				{
+					"id": "e16",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Typescript",
+						"slug": "typescript"
+					}
+				},
+				{
+					"id": "e17",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "JavaScript",
+						"slug": "javascript"
+					}
+				},
+				{
+					"id": "e18",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "CSS",
+						"slug": "css"
+					}
+				},
+				{
+					"id": "e19",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Tailwind",
+						"slug": "tailwind"
+					}
+				},
+				{
+					"id": "e20",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Node.js",
+						"slug": "nodejs"
+					}
+				},
+				{
+					"id": "e21",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "API",
+						"slug": "api"
+					}
+				},
+				{
+					"id": "e22",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Design Systems",
+						"slug": "design-systems"
+					}
+				},
+				{
+					"id": "e23",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Accessibility",
+						"slug": "accessibility"
+					}
+				},
+				{
+					"id": "e24",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Communication",
+						"slug": "communication"
+					}
+				},
+				{
+					"id": "e25",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Science",
+						"slug": "science"
+					}
+				},
+				{
+					"id": "e40",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Laravel",
+						"slug": "laravel"
+					}
+				},
+				{
+					"id": "e41",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "PHP",
+						"slug": "php"
+					}
+				}
+			]
+		},
+		{
+			"collection": "blog-features",
+			"entries": [
+				{
+					"id": "e26",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"icon-name": "biceps-flexed",
+						"title": "Powered By ElmapiCMS",
+						"sub-text": "A modern starter blog built with Next.js, Tailwind CSS, and powered by ElmapiCMS.",
+						"order": "1.000000"
+					}
+				},
+				{
+					"id": "e27",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"icon-name": "monitor-smartphone",
+						"title": "Responsive Design",
+						"sub-text": "Fully responsive layout that looks great on all devices, from mobile to desktop.",
+						"order": "5.000000"
+					}
+				},
+				{
+					"id": "e28",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"icon-name": "moon",
+						"title": "Dark Mode",
+						"sub-text": "Support for dark mode to provide a comfortable reading experience in any lighting.",
+						"order": "6.000000"
+					}
+				},
+				{
+					"id": "e29",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"icon-name": "newspaper",
+						"title": "API-Powered Pagination",
+						"sub-text": "Seamless page navigation powered by ElmapiCMS’s content API for efficient content delivery.",
+						"order": "2.000000"
+					}
+				},
+				{
+					"id": "e30",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"icon-name": "message-square-more",
+						"title": "Comment System",
+						"sub-text": "Allow readers to leave comments using a form that posts to your ElmapiCMS backend.",
+						"order": "3.000000"
+					}
+				},
+				{
+					"id": "e31",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"icon-name": "rss",
+						"title": "Newsletter Integration",
+						"sub-text": "Capture subscribers with a built-in newsletter form that posts directly to your ElmapiCMS API.",
+						"order": "4.000000"
+					}
+				}
+			]
+		},
+		{
+			"collection": "hero-section",
+			"entries": [
+				{
+					"id": "e32",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Starter blog powered by ElmapiCMS built with Next.js and Tailwind CSS",
+						"sub-text": "A clean, elegant blog with a fully responsive design, dark mode support, and modern features.",
+						"read-articles": true,
+						"browse-button": true
+					}
+				}
+			]
+		},
+		{
+			"collection": "settings",
+			"entries": [
+				{
+					"id": "e33",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Elmapi Blog - NextJs",
+						"x": "https://x.com",
+						"facebook": "https://facebook.com",
+						"github": "https://github.com",
+						"linkedin": "https://linkedin.com",
+						"fav-icon": null,
+						"description": "This is a starter blog built with ElmapiCMS. A clean, elegant, ready to use blog with a fully responsive design and dark mode support."
+					}
+				}
+			]
+		}
+	]
+}
