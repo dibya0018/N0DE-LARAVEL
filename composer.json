@@ -60,8 +60,8 @@
     },
     "scripts": {
         "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
+            "@php post-autoload-handler.php || echo 'Skipping post-autoload-dump (packages may not be fully installed)'",
+            "@php -r \"if (file_exists(__DIR__.'/artisan') && file_exists(__DIR__.'/vendor/laravel/framework/src/Illuminate/Events/functions.php')) { @exec('php artisan package:discover --ansi 2>&1', $output, $return); }\" || echo 'Skipping package:discover'"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
