@@ -1,0 +1,3796 @@
+{
+	"slug": "landing-page-nextjs",
+	"name": "Landing Page Next.js",
+	"description": "A production-ready Next.js landing page starter template with blog functionality, powered by ElmapiCMS",
+	"has_demo_data": true,
+	"default_locale": "en",
+	"locales": ["en"],
+	"public_api": false,
+	"collections": [
+		{
+			"name": "Settings",
+			"slug": "settings",
+			"is_singleton": true,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Site Name",
+					"name": "site_name",
+					"description": "The name of your website",
+					"placeholder": "My Website",
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "longtext",
+					"label": "Site Description",
+					"name": "site_description",
+					"description": "Brief description of your website",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Site URL",
+					"name": "site_url",
+					"description": "Base URL of your website (e.g., https://example.com)",
+					"placeholder": "https://example.com",
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "media",
+					"label": "Logo (Light)",
+					"name": "logo_light",
+					"description": "Logo for light mode",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "media",
+					"label": "Logo (Dark)",
+					"name": "logo_dark",
+					"description": "Logo for dark mode",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "media",
+					"label": "Favicon",
+					"name": "favicon",
+					"description": "Website favicon",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Meta Title Template",
+					"name": "meta_title_template",
+					"description": "Template for page titles (use %s for page title)",
+					"placeholder": "%s | Site Name",
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "longtext",
+					"label": "Meta Description",
+					"name": "meta_description",
+					"description": "Default meta description for SEO",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Keywords",
+					"name": "keywords",
+					"description": "SEO keywords (comma-separated)",
+					"placeholder": "keyword1, keyword2, keyword3",
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "media",
+					"label": "OpenGraph Image",
+					"name": "og_image",
+					"description": "Image for social media sharing (1200x630 recommended)",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Twitter Handle",
+					"name": "twitter_handle",
+					"description": "Twitter/X handle (without @)",
+					"placeholder": "username",
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Author/Publisher",
+					"name": "author",
+					"description": "Author or publisher name",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Language",
+					"name": "language",
+					"description": "Site language code (e.g., en, es, fr)",
+					"placeholder": "en",
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Theme Color (Light)",
+					"name": "theme_color_light",
+					"description": "Theme color for light mode (hex code)",
+					"placeholder": "#ffffff",
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Theme Color (Dark)",
+					"name": "theme_color_dark",
+					"description": "Theme color for dark mode (hex code)",
+					"placeholder": "#000000",
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Background Color (Light)",
+					"name": "background_color_light",
+					"description": "Background color for light mode (hex code)",
+					"placeholder": "#ffffff",
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Background Color (Dark)",
+					"name": "background_color_dark",
+					"description": "Background color for dark mode (hex code)",
+					"placeholder": "#000000",
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "longtext",
+					"label": "Footer Description",
+					"name": "footer_description",
+					"description": "Description text shown in footer",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Copyright Text",
+					"name": "copyright_text",
+					"description": "Copyright notice text",
+					"placeholder": "© 2025 Company Name. All rights reserved.",
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "group",
+					"label": "Header Navigation Links",
+					"name": "header_nav_links",
+					"description": "Navigation links for header menu",
+					"placeholder": null,
+					"options": {
+						"repeatable": true,
+						"hiddenInAPI": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					},
+					"children": [
+						{
+							"type": "text",
+							"label": "Label",
+							"name": "label",
+							"description": "Link label",
+							"placeholder": null,
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": true,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						},
+						{
+							"type": "text",
+							"label": "URL",
+							"name": "href",
+							"description": "Link URL",
+							"placeholder": "/page or https://example.com",
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": true,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "group",
+					"label": "Footer Links",
+					"name": "footer_links",
+					"description": "Footer navigation links organized by category",
+					"placeholder": null,
+					"options": {
+						"repeatable": true,
+						"hiddenInAPI": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					},
+					"children": [
+						{
+							"type": "text",
+							"label": "Category",
+							"name": "category",
+							"description": "Link category (e.g., Product, Resources)",
+							"placeholder": null,
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": true,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						},
+						{
+							"type": "text",
+							"label": "Label",
+							"name": "label",
+							"description": "Link label",
+							"placeholder": null,
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": true,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						},
+						{
+							"type": "text",
+							"label": "URL",
+							"name": "href",
+							"description": "Link URL",
+							"placeholder": "/page or https://example.com",
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": true,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "group",
+					"label": "Social Media Links",
+					"name": "social_links",
+					"description": "Social media profile links",
+					"placeholder": null,
+					"options": {
+						"repeatable": true,
+						"hiddenInAPI": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					},
+					"children": [
+						{
+							"type": "text",
+							"label": "Platform",
+							"name": "platform",
+							"description": "Social platform name (e.g., Twitter, GitHub, LinkedIn)",
+							"placeholder": null,
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": true,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						},
+						{
+							"type": "text",
+							"label": "URL",
+							"name": "url",
+							"description": "Social media profile URL",
+							"placeholder": "https://twitter.com/username",
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": true,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "text",
+					"label": "Google Analytics ID",
+					"name": "ga_tracking_id",
+					"description": "Google Analytics tracking ID (e.g., G-XXXXXXXXXX)",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Google Verification Code",
+					"name": "google_verification",
+					"description": "Google Search Console verification code",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Blog",
+			"slug": "blog",
+			"is_singleton": false,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Title",
+					"name": "title",
+					"description": "Blog post title",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "slug",
+					"label": "Slug",
+					"name": "slug",
+					"description": "URL-friendly slug for the blog post",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": "title",
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": true,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "richtext",
+					"label": "Content",
+					"name": "content",
+					"description": "Blog post content (HTML)",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "longtext",
+					"label": "Description",
+					"name": "description",
+					"description": "Short description/excerpt for the blog post",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "date",
+					"label": "Date",
+					"name": "date",
+					"description": "Publication date",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "media",
+					"label": "Image",
+					"name": "image",
+					"description": "Featured image (light mode)",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "media",
+					"label": "Image (Dark)",
+					"name": "image_dark",
+					"description": "Featured image for dark mode",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Category",
+					"name": "category",
+					"description": "Blog post category (optional)",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Hero Section",
+			"slug": "hero-section",
+			"is_singleton": true,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Badge Text",
+					"name": "badge_text",
+					"description": "Badge text displayed above the title",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Title",
+					"name": "title",
+					"description": "Main hero title",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": true,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "longtext",
+					"label": "Description",
+					"name": "description",
+					"description": "Hero section description/subtitle",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Primary Button Text",
+					"name": "primary_button_text",
+					"description": "Text for the primary CTA button",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Primary Button Link",
+					"name": "primary_button_link",
+					"description": "URL or anchor link for primary button",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Secondary Button Text",
+					"name": "secondary_button_text",
+					"description": "Text for the secondary button",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Secondary Button Link",
+					"name": "secondary_button_link",
+					"description": "URL for secondary button",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "boolean",
+					"label": "Open Secondary Button in New Tab",
+					"name": "secondary_button_new_tab",
+					"description": "Open secondary button link in a new tab",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Subtext",
+					"name": "subtext",
+					"description": "Small text below buttons",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "media",
+					"label": "Hero Image (Light)",
+					"name": "image_light",
+					"description": "Hero image for light mode",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "media",
+					"label": "Hero Image (Dark)",
+					"name": "image_dark",
+					"description": "Hero image for dark mode",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Features Section",
+			"slug": "features-section",
+			"is_singleton": true,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Title",
+					"name": "title",
+					"description": "Section heading",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "longtext",
+					"label": "Description",
+					"name": "description",
+					"description": "Section description",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "group",
+					"label": "Features",
+					"name": "features",
+					"description": "Repeatable features list",
+					"placeholder": null,
+					"options": {
+						"repeatable": true,
+						"hiddenInAPI": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					},
+					"children": [
+						{
+							"type": "text",
+							"label": "Title",
+							"name": "title",
+							"description": "Feature title",
+							"placeholder": null,
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": true,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						},
+						{
+							"type": "longtext",
+							"label": "Description",
+							"name": "description",
+							"description": "Feature description",
+							"placeholder": null,
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": true,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						},
+						{
+							"type": "text",
+							"label": "Icon Name",
+							"name": "icon_name",
+							"description": "Icon name from Lucide icons (e.g., layers, server, layout)",
+							"placeholder": null,
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": false,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Pricing Section",
+			"slug": "pricing-section",
+			"is_singleton": true,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Title",
+					"name": "title",
+					"description": "Section heading",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "longtext",
+					"label": "Description",
+					"name": "description",
+					"description": "Section description",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Price",
+					"name": "price",
+					"description": "Price display (e.g., $49)",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Price Subtitle",
+					"name": "price_subtitle",
+					"description": "Subtitle below the price",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Features",
+					"name": "features",
+					"description": "List of features (repeatable)",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": true,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Button Text",
+					"name": "button_text",
+					"description": "Text for the purchase button",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Button Link",
+					"name": "button_link",
+					"description": "URL for the purchase button",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "boolean",
+					"label": "Open Button in New Tab",
+					"name": "button_new_tab",
+					"description": "Open button link in a new tab",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "text",
+					"label": "Footer Text",
+					"name": "footer_text",
+					"description": "Small text below the button",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "FAQ Section",
+			"slug": "faq-section",
+			"is_singleton": true,
+			"fields": [
+				{
+					"type": "text",
+					"label": "Title",
+					"name": "title",
+					"description": "Section heading",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "longtext",
+					"label": "Description",
+					"name": "description",
+					"description": "Section description",
+					"placeholder": null,
+					"options": {
+						"mode": "single",
+						"slug": {
+							"field": null,
+							"readonly": false
+						},
+						"media": {
+							"type": 1
+						},
+						"editor": {
+							"type": 1
+						},
+						"multiple": false,
+						"relation": {
+							"type": 1,
+							"collection": null
+						},
+						"repeatable": false,
+						"enumeration": {
+							"list": []
+						},
+						"hiddenInAPI": false,
+						"includeTime": false,
+						"includeDraft": false,
+						"numberOfMonths": 1,
+						"hideInContentList": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					}
+				},
+				{
+					"type": "group",
+					"label": "FAQs",
+					"name": "faqs",
+					"description": "Repeatable FAQ items",
+					"placeholder": null,
+					"options": {
+						"repeatable": true,
+						"hiddenInAPI": false
+					},
+					"validations": {
+						"unique": {
+							"status": false,
+							"message": null
+						},
+						"required": {
+							"status": false,
+							"message": null
+						},
+						"charcount": {
+							"max": null,
+							"min": null,
+							"type": "Between",
+							"status": false,
+							"message": null
+						}
+					},
+					"children": [
+						{
+							"type": "text",
+							"label": "Question",
+							"name": "question",
+							"description": "FAQ question",
+							"placeholder": null,
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": true,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						},
+						{
+							"type": "longtext",
+							"label": "Answer",
+							"name": "answer",
+							"description": "FAQ answer",
+							"placeholder": null,
+							"options": {
+								"mode": "single",
+								"slug": {
+									"field": null,
+									"readonly": false
+								},
+								"media": {
+									"type": 1
+								},
+								"editor": {
+									"type": 1
+								},
+								"multiple": false,
+								"relation": {
+									"type": 1,
+									"collection": null
+								},
+								"repeatable": false,
+								"enumeration": {
+									"list": []
+								},
+								"hiddenInAPI": false,
+								"includeTime": false,
+								"includeDraft": false,
+								"numberOfMonths": 1,
+								"hideInContentList": false
+							},
+							"validations": {
+								"unique": {
+									"status": false,
+									"message": null
+								},
+								"required": {
+									"status": true,
+									"message": null
+								},
+								"charcount": {
+									"max": null,
+									"min": null,
+									"type": "Between",
+									"status": false,
+									"message": null
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"demo_data": [
+		{
+			"collection": "settings",
+			"entries": [
+				{
+					"id": "e0",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"site_name": "My Website",
+						"site_description": "A modern website built with Next.js and powered by ElmapiCMS",
+						"site_url": "https://example.com",
+						"logo_light": null,
+						"logo_dark": null,
+						"favicon": null,
+						"meta_title_template": "%s | My Website",
+						"meta_description": "A modern website built with Next.js and powered by ElmapiCMS",
+						"keywords": "website, nextjs, cms, headless cms, modern web",
+						"og_image": null,
+						"twitter_handle": "username",
+						"author": "My Website Team",
+						"language": "en",
+						"theme_color_light": "#ffffff",
+						"theme_color_dark": "#000000",
+						"background_color_light": "#ffffff",
+						"background_color_dark": "#000000",
+						"footer_description": "A modern website built with Next.js and powered by ElmapiCMS",
+						"copyright_text": "© 2025 My Website. All rights reserved.",
+						"header_nav_links": [
+							{
+								"label": "Features",
+								"href": "/#features"
+							},
+							{
+								"label": "Blog",
+								"href": "/blog"
+							},
+							{
+								"label": "Pricing",
+								"href": "/#pricing"
+							},
+							{
+								"label": "FAQ",
+								"href": "/#faq"
+							}
+						],
+						"footer_links": [
+							{
+								"category": "Product",
+								"label": "Features",
+								"href": "/#features"
+							},
+							{
+								"category": "Product",
+								"label": "Pricing",
+								"href": "/#pricing"
+							},
+							{
+								"category": "Resources",
+								"label": "Documentation",
+								"href": "https://docs.example.com/"
+							},
+							{
+								"category": "Resources",
+								"label": "Demo",
+								"href": "https://demo.example.com/"
+							}
+						],
+						"social_links": [
+							{
+								"platform": "Twitter",
+								"url": "https://twitter.com/username"
+							},
+							{
+								"platform": "GitHub",
+								"url": "https://github.com/username"
+							}
+						],
+						"ga_tracking_id": null,
+						"google_verification": null
+					}
+				}
+			]
+		},
+		{
+			"collection": "hero-section",
+			"entries": [
+				{
+					"id": "e1",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"badge_text": "✨ New Launch",
+						"title": "Welcome to Our Platform",
+						"description": "Discover a powerful solution designed to help you achieve your goals. Get started today and experience the difference.",
+						"primary_button_text": "Get Started",
+						"primary_button_link": "#pricing",
+						"secondary_button_text": "Learn More",
+						"secondary_button_link": "#features",
+						"secondary_button_new_tab": false,
+						"subtext": "Start your free trial today. No credit card required.",
+						"image_light": null,
+						"image_dark": null
+					}
+				}
+			]
+		},
+		{
+			"collection": "features-section",
+			"entries": [
+				{
+					"id": "e5",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+							"title": "Key Features",
+							"description": "Discover what makes our solution stand out from the rest.",
+						"features": [
+							{
+									"title": "Fast Performance",
+									"description": "Lightning-fast load times and optimized for speed across all devices.",
+									"icon_name": "zap"
+							},
+							{
+									"title": "Easy to Use",
+									"description": "Intuitive interface designed for users of all technical levels.",
+									"icon_name": "layout"
+							},
+							{
+									"title": "Secure & Reliable",
+									"description": "Enterprise-grade security with 99.9% uptime guarantee.",
+									"icon_name": "server"
+							},
+							{
+									"title": "24/7 Support",
+									"description": "Round-the-clock customer support to help you whenever you need it.",
+									"icon_name": "users"
+							},
+							{
+									"title": "Scalable",
+									"description": "Grows with your business from startup to enterprise scale.",
+									"icon_name": "cloud"
+							},
+							{
+									"title": "Customizable",
+									"description": "Tailor the solution to fit your specific needs and requirements.",
+									"icon_name": "penLine"
+								}
+							]
+						}
+				}
+			]
+							},
+							{
+			"collection": "pricing-section",
+			"entries": [
+				{
+					"id": "e6",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Simple Pricing",
+						"description": "Choose the plan that works best for you. All plans include our core features.",
+						"price": "$99",
+						"price_subtitle": "One-time payment. No recurring fees.",
+						"features": [
+							"All core features",
+							"Priority support",
+							"Regular updates",
+							"30-day money-back guarantee"
+						],
+						"button_text": "Get Started",
+						"button_link": "#",
+						"button_new_tab": false,
+						"footer_text": "Secure checkout. Cancel anytime."
+					}
+				}
+			]
+		},
+		{
+			"collection": "faq-section",
+				"entries": [
+					{
+						"id": "e7",
+						"locale": "en",
+						"status": "published",
+						"fields": {
+							"title": "Frequently Asked Questions",
+							"description": "Have questions? We've got answers. Can't find what you're looking for? Contact our support team.",
+							"faqs": [
+							{
+									"question": "How do I get started?",
+									"answer": "Getting started is easy! Simply sign up for an account, choose your plan, and you'll have access to all features immediately."
+							},
+							{
+									"question": "What payment methods do you accept?",
+									"answer": "We accept all major credit cards, PayPal, and bank transfers. All payments are processed securely."
+								},
+								{
+									"question": "Can I cancel my subscription anytime?",
+									"answer": "Yes, you can cancel your subscription at any time. There are no cancellation fees or long-term commitments."
+								},
+								{
+									"question": "Do you offer refunds?",
+									"answer": "We offer a 30-day money-back guarantee. If you're not satisfied, contact us within 30 days for a full refund."
+								},
+								{
+									"question": "Is there a free trial available?",
+									"answer": "Yes! We offer a 14-day free trial with full access to all features. No credit card required."
+								},
+								{
+									"question": "What kind of support do you provide?",
+									"answer": "We provide email support, live chat, and comprehensive documentation. Premium plans include priority support."
+							},
+							{
+									"question": "Can I upgrade or downgrade my plan?",
+									"answer": "Absolutely! You can change your plan at any time. Upgrades take effect immediately, and downgrades apply at the next billing cycle."
+							},
+							{
+									"question": "Is my data secure?",
+									"answer": "Security is our top priority. We use industry-standard encryption and follow best practices to protect your data."
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"collection": "blog",
+			"entries": [
+				{
+					"id": "e2",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Welcome to Our Blog",
+						"slug": "welcome-to-our-blog",
+						"content": "<p>This is your first blog post. You can edit this content directly in your CMS.</p>\n\n<h2>Getting Started</h2>\n\n<p>This blog is powered by a headless CMS, giving you complete control over your content and how it's displayed.</p>\n\n<h2>Key Features</h2>\n\n<ul>\n<li><strong>Easy Content Management</strong> - Update your content without touching code</li>\n<li><strong>Flexible Structure</strong> - Organize your content however you want</li>\n<li><strong>Fast Performance</strong> - Optimized for speed and SEO</li>\n<li><strong>Modern Design</strong> - Beautiful, responsive layouts out of the box</li>\n</ul>\n\n<h2>Next Steps</h2>\n\n<ol>\n<li>Customize your content</li>\n<li>Add more blog posts</li>\n<li>Configure your settings</li>\n<li>Launch your site</li>\n</ol>\n\n<p>Happy writing!</p>",
+						"description": "Learn about our blog and how to get started with your first post.",
+						"date": "2024-01-15",
+						"category": "Getting Started",
+						"image": null,
+						"image_dark": null
+					}
+				},
+				{
+					"id": "e3",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "Building Modern Websites with Next.js",
+						"slug": "building-modern-websites-with-nextjs",
+						"content": "<p>Next.js has become the go-to framework for building modern web applications. In this post, we'll explore why.</p>\n\n<h2>Why Next.js?</h2>\n\n<p>Next.js offers:</p>\n\n<ul>\n<li><strong>Server-Side Rendering</strong> - Better SEO and performance</li>\n<li><strong>Static Site Generation</strong> - Pre-render pages at build time</li>\n<li><strong>API Routes</strong> - Build your backend alongside your frontend</li>\n<li><strong>Image Optimization</strong> - Automatic image optimization</li>\n<li><strong>TypeScript Support</strong> - Built-in TypeScript support</li>\n</ul>\n\n<h2>Getting Started</h2>\n\n<pre><code>npx create-next-app@latest my-app\ncd my-app\nnpm run dev\n</code></pre>\n\n<p>That's it! You're ready to start building.</p>",
+						"description": "Discover why Next.js is the perfect choice for modern web development.",
+						"date": "2024-01-10",
+						"category": "Development",
+						"image": null,
+						"image_dark": null
+					}
+				},
+				{
+					"id": "e4",
+					"locale": "en",
+					"status": "published",
+					"fields": {
+						"title": "The Future of Headless CMS",
+						"slug": "the-future-of-headless-cms",
+						"content": "<p>Headless CMS architecture is reshaping how we build websites and applications.</p>\n\n<h2>What Makes Headless CMS Special?</h2>\n\n<p>Unlike traditional CMS platforms, headless CMS separates content management from presentation. This gives developers:</p>\n\n<ul>\n<li><strong>Flexibility</strong> - Use any frontend framework</li>\n<li><strong>Scalability</strong> - Scale content and frontend independently</li>\n<li><strong>Performance</strong> - Optimize each layer separately</li>\n<li><strong>Developer Experience</strong> - Work with modern tools and APIs</li>\n</ul>\n\n<h2>The Benefits</h2>\n\n<ol>\n<li><strong>Content Reusability</strong> - Use the same content across multiple platforms</li>\n<li><strong>Better Performance</strong> - Serve content via CDN</li>\n<li><strong>Future-Proof</strong> - Change frontend without migrating content</li>\n<li><strong>Team Collaboration</strong> - Content editors and developers work independently</li>\n</ol>\n\n<h2>Conclusion</h2>\n\n<p>Headless CMS is not just a trend—it's the future of content management.</p>",
+						"description": "Explore how headless CMS is changing the landscape of web development.",
+						"date": "2024-01-05",
+						"category": "Technology",
+						"image": null,
+						"image_dark": null
+					}
+				}
+			]
+		}
+	]
+}

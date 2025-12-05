@@ -1,0 +1,11 @@
+import{c as s,b as l}from"./button-BUWHkrIo.js";import{j as e}from"./app-BAYl1HSz.js";import{c as i}from"./utils-CSG-oG7g.js";import{C as c}from"./chevron-left-CIVxo5Hh.js";import{C as p}from"./chevron-right-D6wPFmnq.js";/**
+ * @license lucide-react v0.475.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const m=[["path",{d:"m21 16-4 4-4-4",key:"f6ql7i"}],["path",{d:"M17 20V4",key:"1ejh1v"}],["path",{d:"m3 8 4-4 4 4",key:"11wl7u"}],["path",{d:"M7 4v16",key:"1glfcx"}]],N=s("ArrowUpDown",m);/**
+ * @license lucide-react v0.475.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const u=[["circle",{cx:"12",cy:"12",r:"1",key:"41hilf"}],["circle",{cx:"19",cy:"12",r:"1",key:"1wjl8i"}],["circle",{cx:"5",cy:"12",r:"1",key:"1pcz8c"}]],x=s("Ellipsis",u);function y({className:a,...n}){return e.jsx("nav",{role:"navigation","aria-label":"pagination","data-slot":"pagination",className:i("mx-auto flex w-full justify-center",a),...n})}function k({className:a,...n}){return e.jsx("ul",{"data-slot":"pagination-content",className:i("flex flex-row items-center gap-1",a),...n})}function v({...a}){return e.jsx("li",{"data-slot":"pagination-item",...a})}function t({className:a,isActive:n,size:o="icon",...r}){return e.jsx("a",{"aria-current":n?"page":void 0,"data-slot":"pagination-link","data-active":n,className:i(l({variant:n?"outline":"ghost",size:o}),a),...r})}function P({className:a,...n}){return e.jsxs(t,{"aria-label":"Go to previous page",size:"default",className:i("gap-1 px-2.5 sm:pl-2.5",a),...n,children:[e.jsx(c,{}),e.jsx("span",{className:"hidden sm:block",children:"Previous"})]})}function b({className:a,...n}){return e.jsxs(t,{"aria-label":"Go to next page",size:"default",className:i("gap-1 px-2.5 sm:pr-2.5",a),...n,children:[e.jsx("span",{className:"hidden sm:block",children:"Next"}),e.jsx(p,{})]})}function w({className:a,...n}){return e.jsxs("span",{"aria-hidden":!0,"data-slot":"pagination-ellipsis",className:i("flex size-9 items-center justify-center",a),...n,children:[e.jsx(x,{className:"size-4"}),e.jsx("span",{className:"sr-only",children:"More pages"})]})}export{N as A,y as P,k as a,v as b,P as c,t as d,w as e,b as f};
