@@ -23,7 +23,7 @@
     ],
     "license": "Proprietary",
     "require": {
-        "php": "^8.2",
+        "php": "^8.2|^8.5",
         "doctrine/annotations": "^2.0",
         "fakerphp/faker": "^1.23",
         "inertiajs/inertia-laravel": "^2.0",
